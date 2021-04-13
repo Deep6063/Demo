@@ -1,6 +1,9 @@
-# Demo
+# FreeCodeCamp
 
-This is a demo repo, to learn about Git!
 
-## Updated 
-Updated on a local machine!
+## Greetings
+Hi, 
+I hope you all are doing well. 
+
+## Scope
+Build Dog Photo App
