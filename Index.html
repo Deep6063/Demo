@@ -15,7 +15,32 @@
             form{
                 background-color:darkslateblue;
                 font-size: 16px;
-                font-family:cursive   
+                font-family: cursive; 
+                width: 255px;
+
+                position:relative;
+                left: 50%;
+
+            }
+            
+            .love, .hate {
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                width: 255px;
+            }
+            .love:hover, .hate:hover {
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(23, 197, 75, 0.23);
+            }
+
+            .heading h4 {
+                text-align: center;
+                padding: 10px;
+                margin-top: 20px;
+            }
+            h1 {
+                position: fixed; 
+                top: 0px; 
+                left: 50%;
+
             }
         </style>
     </head>
@@ -23,18 +48,32 @@
         <h1>Dog Photos</h1>
         <p>Some more <a href="https://www.pinterest.ca/rwilobe/dog-photos-prints/" target="_blank">Dog</a> images</p>
         <img src="media\dog.jpg" alt="Happy-Dog" style="height:400px;width:400px">
-        <p>Things Dog love:</p>
-        <ul>
-            <li>Dog nip</li>
-            <li>Bones and Sticks</li>
-            <li>Tuna</li>
-        </ul>
-        <p>Top 3 things dogs hate:</p>
-        <ol>
-            <li>Cold water bath</li>
-            <li>Thunder</li>
-            <li>Veterinarians</li>
-        </ol>
+        <div class="LoveHate">
+            <div class="love">    
+                <div class="heading">
+                    <h4>Things Dog love:</h4>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Dog nip</li>
+                        <li>Bones and Sticks</li>
+                        <li>Tuna</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hate">    
+                <div class="heading">
+                    <h4>Top 3 things dogs hate:</h4>
+                </div>
+                <div class="list">
+                    <ol>
+                        <li>Cold water bath</li>
+                        <li>Thunder</li>
+                        <li>Veterinarians</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
 
         <form  action="#">
             <label for="indoor">
