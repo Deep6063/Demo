@@ -1,6 +1,6 @@
 body {
     font-size: 16px;
-    font-family:Arial, Helvetica, sans-serial 
+    font-family:Arial, Helvetica, sans-serial; 
 }
 form{
     
@@ -12,13 +12,11 @@ form{
 
     position:relative;
     left: 50%;
-
 }
 
 .love, .hate {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    width: 255px;
-    
+    width: 255px;  
 }
 .love:hover, .hate:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(23, 197, 75, 0.23);
@@ -29,11 +27,40 @@ form{
     padding: 10px;
     margin-top: 20px;
 }
+
 h1 {
     position: fixed; 
     top: 0px; 
     left: 50%;
+
+    animation-name: rainbow;
+    animation-duration: 5s; 
+    animation-fill-mode: forwards;
 }
+
+@keyframes rainbow {
+
+    0% {
+        color: pink; 
+    }
+    20% {
+        color: green; 
+    }
+    40% {
+        color: yellow; 
+    }
+    60% {
+        color: blue; 
+    }
+    80% {
+        color: violet; 
+    }
+    100% {
+        color: brown; 
+    }
+}
+
 h1:hover {
     transform: scale(1.5);
+    
 }
